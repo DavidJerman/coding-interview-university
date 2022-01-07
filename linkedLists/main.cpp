@@ -1,8 +1,10 @@
 #include <iostream>
 #include "LinkedList.h"
+#include "DLinkedList.h"
 
 int main() {
 
+    // SLinkedList
     LinkedList linkedList;
     linkedList.push_front(10);
     linkedList.pop_front();
@@ -28,6 +30,18 @@ int main() {
     linkedList.push_back(9);
     linkedList.reverse();
     linkedList.remove_value(42);
+
+    // DLinkedList
+    DLinkedList dLinkedList;
+    dLinkedList.push_front(10);
+    dLinkedList.pop_front();
+    dLinkedList.push_back(10);
+    dLinkedList.pop_back();
+    dLinkedList.push_front(10);
+    dLinkedList.push_front(11);
+    dLinkedList.insert(42, 1);
+    dLinkedList.insert(43, 3);
+    dLinkedList.insert(41, 0);
 
     return 0;
 }
