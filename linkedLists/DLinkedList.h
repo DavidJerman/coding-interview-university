@@ -135,12 +135,4 @@ public:
             _size++;
         }
     }
-
-    /**
-     * Erases a value from the list at a given index
-     * @param index Index
-     */
-    void erase(int index) {
-
-    }
 };
